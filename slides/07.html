@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>조언 5 + 체크리스트</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="flex items-stretch justify-center w-[1280px] min-h-[720px] bg-gray-900 text-white relative overflow-hidden" style="font-family: 'Noto Sans KR', sans-serif;">
+<!-- 배경 그라데이션 효과 -->
+<div class="absolute inset-0 z-0 bg-gray-900">
+<div class="absolute inset-0 opacity-10 bg-pattern"></div>
+</div>
+<!-- 왼쪽 사이드바 - 제목 -->
+<div class="z-10 w-1/3 bg-gray-800 flex flex-col">
+<div class="flex-1 flex flex-col items-start justify-center px-12 py-10 relative">
+<!-- 제목 영역 -->
+<div class="absolute top-0 left-0 w-full h-1 bg-blue-500"></div>
+<h1 class="text-4xl font-bold mb-6 text-white">
+<p>조언 5 + 체크리스트</p>
+</h1>
+<div class="flex items-center mb-10">
+<div class="w-20 h-1 bg-blue-400"></div>
+</div>
+<!-- 이미지 추가 -->
+<div class="bg-gray-700 bg-opacity-50 p-6 rounded-lg w-full">
+<div class="flex items-center justify-center p-4">
+<i class="fas fa-tachometer-alt text-6xl text-blue-400"></i>
+</div>
+<p class="text-center text-xl font-bold text-blue-400 mt-4">
+성능 감각 키우기
+</p>
+<p class="text-center text-sm text-gray-300 mt-2">
+실무 준비 체크리스트
+</p>
+</div>
+</div>
+</div>
+<!-- 오른쪽 메인 콘텐츠 영역 -->
+<div class="z-10 w-2/3 flex flex-col px-12 py-10">
+<!-- 조언 5 -->
+<div class="mb-8">
+<div class="flex items-center mb-4">
+<i class="fas fa-lightbulb text-2xl text-blue-400 mr-3"></i>
+<h2 class="text-2xl font-bold text-white">
+<p>조언 5) 성능 감각 키우기</p>
+</h2>
+</div>
+<div class="pl-9 grid grid-cols-1 gap-2">
+<div class="flex items-start mb-2">
+<i class="fas fa-microchip text-blue-400 mt-1 mr-3"></i>
+<p class="text-gray-200">캐시 친화적 데이터 구조, 메모리 레이아웃 최적화</p>
+</div>
+<div class="flex items-start mb-2">
+<i class="fas fa-network-wired text-blue-400 mt-1 mr-3"></i>
+<p class="text-gray-200">멀티스레딩 기본, 경쟁 조건과 락 최소화 전략</p>
+</div>
+<div class="flex items-start mb-2">
+<i class="fas fa-level-down-alt text-blue-400 mt-1 mr-3"></i>
+<p class="text-gray-200">low-level 비용 감각 (메모리 접근, 분기 예측, SIMD)</p>
+</div>
+<div class="flex items-start mb-2">
+<i class="fas fa-chart-line text-blue-400 mt-1 mr-3"></i>
+<p class="text-gray-200">릴리즈 빌드 기준으로 측정, 실제 하드웨어 테스트</p>
+</div>
+<div class="flex items-start mb-4">
+<i class="fas fa-bug text-blue-400 mt-1 mr-3"></i>
+<p class="text-gray-200">재현 가능한 리프로듀서 작성, 베이스라인 확보</p>
+</div>
+</div>
+</div>
+<!-- 체크리스트 -->
+<div class="mb-4">
+<div class="flex items-center mb-4">
+<i class="fas fa-clipboard-check text-2xl text-blue-400 mr-3"></i>
+<h2 class="text-2xl font-bold text-white">
+<p>실무 준비 체크리스트</p>
+</h2>
+</div>
+<div class="pl-9">
+<div class="flex items-start mb-3 bg-gray-800 bg-opacity-60 p-3 rounded-lg">
+<div class="mt-1 mr-3 text-green-400">
+<i class="fas fa-check-square text-xl"></i>
+</div>
+<div>
+<p class="text-lg font-semibold text-white">크래시를 '원인'까지 추적하는 루틴 보유</p>
+<p class="text-sm text-gray-300">메모리 오염, 스택 트레이스 해석, 경쟁 조건 식별 능력</p>
+</div>
+</div>
+<div class="flex items-start mb-3 bg-gray-800 bg-opacity-60 p-3 rounded-lg">
+<div class="mt-1 mr-3 text-green-400">
+<i class="fas fa-chart-bar text-xl"></i>
+</div>
+<div>
+<p class="text-lg font-semibold text-white">성능 전/후 데이터와 그래프 제시 습관</p>
+<p class="text-sm text-gray-300">정량적 지표, 재현 가능한 환경, A/B 비교 시각화</p>
+</div>
+</div>
+<div class="flex items-start bg-gray-800 bg-opacity-60 p-3 rounded-lg">
+<div class="mt-1 mr-3 text-green-400">
+<i class="fas fa-users text-xl"></i>
+</div>
+<div>
+<p class="text-lg font-semibold text-white">팀 협업 프로세스 이해</p>
+<p class="text-sm text-gray-300">요구사항 정의 → RFC → 기술 리뷰 → 실험 → 검증 루프</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 코드 시각 효과 -->
+<div class="absolute bottom-3 right-3 text-xs text-gray-600 font-mono">
+<p>Profiler::MeasurePerformance();</p>
+</div>
+</div>
+</body>
+</html>

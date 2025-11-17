@@ -1,0 +1,17 @@
+{
+  "name": "presentation-collage-student",
+  "version": "1.0.0",
+  "description": "게임 개발 현업자 강연 - Reveal.js 프레젠테이션",
+  "main": "index.html",
+  "scripts": {
+    "build": "python build.py"
+  },
+  "keywords": [
+    "reveal.js",
+    "presentation",
+    "slides",
+    "game-development"
+  ],
+  "author": "",
+  "license": "MIT"
+}

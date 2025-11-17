@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>강연자 소개</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="flex items-stretch justify-center w-[1280px] min-h-[720px] bg-gray-900 text-white relative overflow-hidden" style="font-family: 'Noto Sans KR', sans-serif;">
+<!-- 배경 그라데이션 효과 -->
+<div class="absolute inset-0 z-0 bg-gray-900">
+<div class="absolute inset-0 opacity-10 bg-pattern"></div>
+</div>
+<!-- 왼쪽 사이드바 - 제목 -->
+<div class="z-10 w-1/3 bg-gray-800 flex flex-col">
+<div class="flex-1 flex flex-col items-start justify-center px-12 py-10 relative">
+<!-- 제목 영역 -->
+<div class="absolute top-0 left-0 w-full h-1 bg-blue-500"></div>
+<h1 class="text-4xl font-bold mb-6 text-white">
+<p>강연자 소개</p>
+</h1>
+<div class="flex items-center mb-10">
+<div class="w-20 h-1 bg-blue-400"></div>
+</div>
+<!-- 프로필 정보 -->
+<div class="bg-gray-700 bg-opacity-50 p-6 rounded-lg w-full">
+<div class="flex items-center mb-6">
+<div class="w-16 h-16 rounded-full bg-blue-500 flex items-center justify-center">
+<i class="fas fa-user text-3xl"></i>
+</div>
+<div class="ml-4">
+<p class="text-2xl font-bold">허창무</p>
+<p class="text-blue-400">Engine Programmer</p>
+</div>
+</div>
+<p class="text-sm text-gray-300">
+<i class="far fa-envelope mr-2 text-blue-400"></i> 연락처: 강연 후 공유 예정
+                </p>
+</div>
+</div>
+</div>
+<!-- 오른쪽 메인 콘텐츠 영역 -->
+<div class="z-10 w-2/3 flex flex-col px-12 py-10">
+<!-- 전문 분야 -->
+<div class="mb-8">
+<div class="flex items-center mb-3">
+<i class="fas fa-laptop-code text-xl text-blue-400 mr-3"></i>
+<h2 class="text-2xl font-bold text-white">
+<p>현 직무</p>
+</h2>
+</div>
+<div class="pl-9">
+<p class="text-lg text-gray-200 mb-1">
+                    엔진 프로그래머 <span class="text-blue-400">(언리얼 기반 프로젝트 경험)</span>
+</p>
+</div>
+</div>
+<!-- 주요 분야 -->
+<div class="mb-8">
+<div class="flex items-center mb-3">
+<i class="fas fa-tools text-xl text-blue-400 mr-3"></i>
+<h2 class="text-2xl font-bold text-white">
+<p>주요 분야</p>
+</h2>
+</div>
+<div class="pl-9 grid grid-cols-2 gap-2">
+<div class="flex items-start">
+<i class="fas fa-check-circle text-blue-400 mt-1 mr-2"></i>
+<p class="text-gray-200">성능 최적화</p>
+</div>
+<div class="flex items-start">
+<i class="fas fa-check-circle text-blue-400 mt-1 mr-2"></i>
+<p class="text-gray-200">멀티스레딩</p>
+</div>
+<div class="flex items-start">
+<i class="fas fa-check-circle text-blue-400 mt-1 mr-2"></i>
+<p class="text-gray-200">렌더링/툴링</p>
+</div>
+<div class="flex items-start">
+<i class="fas fa-check-circle text-blue-400 mt-1 mr-2"></i>
+<p class="text-gray-200">디버깅/프로파일링</p>
+</div>
+</div>
+</div>
+<!-- 경험 -->
+<div class="mb-8">
+<div class="flex items-center mb-3">
+<i class="fas fa-briefcase text-xl text-blue-400 mr-3"></i>
+<h2 class="text-2xl font-bold text-white">
+<p>경험</p>
+</h2>
+</div>
+<div class="pl-9">
+<div class="flex items-start mb-2">
+<i class="fas fa-caret-right text-blue-400 mt-1.5 mr-2"></i>
+<p class="text-gray-200">라이브 서비스(대규모 동시 접속)와 콘솔 대응</p>
+</div>
+<div class="flex items-start">
+<i class="fas fa-caret-right text-blue-400 mt-1.5 mr-2"></i>
+<p class="text-gray-200">빌드/릴리즈 파이프라인</p>
+</div>
+</div>
+</div>
+<!-- 관심사 -->
+<div class="mb-2">
+<div class="flex items-center mb-3">
+<i class="fas fa-star text-xl text-blue-400 mr-3"></i>
+<h2 class="text-2xl font-bold text-white">
+<p>관심</p>
+</h2>
+</div>
+<div class="pl-9">
+<div class="flex items-start mb-2">
+<i class="fas fa-caret-right text-blue-400 mt-1.5 mr-2"></i>
+<p class="text-gray-200">엔진 아키텍처, 데이터 지향 설계</p>
+</div>
+<div class="flex items-start">
+<i class="fas fa-caret-right text-blue-400 mt-1.5 mr-2"></i>
+<p class="text-gray-200">개발 문화(코드리뷰/테스트)</p>
+</div>
+</div>
+</div>
+</div>
+<!-- 코드 시각 효과 -->
+<div class="absolute bottom-3 right-3 text-xs text-gray-600 font-mono">
+<p>Engine::Optimize();</p>
+</div>
+</div>
+</body>
+</html>

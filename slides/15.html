@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>타격감, 어떻게 구현하나요?</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="flex items-stretch justify-center w-[1280px] min-h-[720px] bg-gray-900 text-white relative overflow-hidden" style="font-family: 'Noto Sans KR', sans-serif;">
+<!-- 배경 -->
+<div class="absolute inset-0 z-0 bg-gray-900">
+<div class="absolute inset-0 opacity-10 bg-pattern"></div>
+</div>
+<!-- 왼쪽 사이드바 - 질문 영역 -->
+<div class="z-10 w-1/3 bg-gray-800 flex flex-col">
+<div class="flex-1 flex flex-col items-start justify-center px-12 py-10 relative">
+<!-- 상단 강조선 -->
+<div class="absolute top-0 left-0 w-full h-1 bg-blue-500"></div>
+<!-- 질문 타이틀 -->
+<h1 class="text-3xl font-bold mb-6 text-white">
+<p>타격감, 어떻게 구현하나요?</p>
+</h1>
+<div class="flex items-center mb-10">
+<div class="w-20 h-1 bg-blue-400"></div>
+</div>
+<!-- Q&A 아이콘 -->
+<div class="w-20 h-20 rounded-full bg-blue-500 bg-opacity-20 flex items-center justify-center mb-6">
+<i class="fas fa-gamepad text-4xl text-blue-400"></i>
+</div>
+<!-- 질문 표시 -->
+<div class="bg-gray-700 bg-opacity-50 p-5 rounded-lg w-full mt-4">
+<p class="text-lg italic text-gray-300">
+<i class="fas fa-quote-left text-sm text-blue-400 mr-2"></i>
+          게임에 타격감을 넣는점에 대해 고민이 많은데 타격감이라는 추상적인 느낌을 어떻게 구현하시나요?
+          <i class="fas fa-quote-right text-sm text-blue-400 ml-2"></i>
+</p>
+</div>
+</div>
+</div>
+<!-- 오른쪽 메인 콘텐츠 영역 - 답변 -->
+<div class="z-10 w-2/3 flex flex-col px-12 py-10">
+<!-- 신호 합성 섹션 -->
+<div class="mb-6">
+<div class="flex items-center mb-4">
+<i class="fas fa-layer-group text-xl text-blue-400 mr-3"></i>
+<h2 class="text-2xl font-bold text-white">
+<p>신호 합성</p>
+</h2>
+</div>
+<div class="pl-9 grid grid-cols-2 gap-y-3 gap-x-6">
+<div class="flex items-start">
+<i class="fas fa-running text-blue-400 mt-1 mr-2"></i>
+<p class="text-gray-200">애니메이션(히트리액션)</p>
+</div>
+<div class="flex items-start">
+<i class="fas fa-camera-retro text-blue-400 mt-1 mr-2"></i>
+<p class="text-gray-200">카메라 쉐이크</p>
+</div>
+<div class="flex items-start">
+<i class="fas fa-volume-up text-blue-400 mt-1 mr-2"></i>
+<p class="text-gray-200">SFX(소리 효과)</p>
+</div>
+<div class="flex items-start">
+<i class="fas fa-sun text-blue-400 mt-1 mr-2"></i>
+<p class="text-gray-200">파티클/Decal</p>
+</div>
+<div class="flex items-start col-span-2">
+<i class="fas fa-hourglass-half text-blue-400 mt-1 mr-2"></i>
+<p class="text-gray-200">Time Dilation(시간 확장/축소)</p>
+</div>
+</div>
+</div>
+<!-- 게임플레이 섹션 -->
+<div class="mb-6">
+<div class="flex items-center mb-4">
+<i class="fas fa-gamepad text-xl text-blue-400 mr-3"></i>
+<h2 class="text-2xl font-bold text-white">
+<p>게임플레이</p>
+</h2>
+</div>
+<div class="pl-9 grid grid-cols-2 gap-y-3 gap-x-6">
+<div class="flex items-start">
+<i class="fas fa-stop-circle text-blue-400 mt-1 mr-2"></i>
+<p class="text-gray-200">히트스톱(순간 멈춤)</p>
+</div>
+<div class="flex items-start">
+<i class="fas fa-arrow-circle-right text-blue-400 mt-1 mr-2"></i>
+<p class="text-gray-200">넉백(반동)</p>
+</div>
+<div class="flex items-start">
+<i class="fas fa-bullseye text-blue-400 mt-1 mr-2"></i>
+<p class="text-gray-200">히트박스 정확도</p>
+</div>
+<div class="flex items-start">
+<i class="fas fa-exclamation-circle text-blue-400 mt-1 mr-2"></i>
+<p class="text-gray-200">치명타 피드백</p>
+</div>
+</div>
+</div>
+<!-- 기술/운영 섹션 -->
+<div class="grid grid-cols-2 gap-6">
+<div>
+<div class="flex items-center mb-4">
+<i class="fas fa-code text-xl text-blue-400 mr-3"></i>
+<h2 class="text-2xl font-bold text-white">
+<p>기술</p>
+</h2>
+</div>
+<div class="pl-9">
+<div class="flex items-start mb-3">
+<i class="fas fa-tachometer-alt text-blue-400 mt-1 mr-2"></i>
+<p class="text-gray-200">입력→반응 지연 최소화</p>
+</div>
+<div class="flex items-start">
+<i class="fas fa-network-wired text-blue-400 mt-1 mr-2"></i>
+<p class="text-gray-200">네트워크 예측/리컨실</p>
+</div>
+</div>
+</div>
+<div>
+<div class="flex items-center mb-4">
+<i class="fas fa-chart-line text-xl text-blue-400 mr-3"></i>
+<h2 class="text-2xl font-bold text-white">
+<p>운영</p>
+</h2>
+</div>
+<div class="pl-9">
+<div class="flex items-start mb-3">
+<i class="fas fa-database text-blue-400 mt-1 mr-2"></i>
+<p class="text-gray-200">데이터 드리븐 커브/태그</p>
+</div>
+<div class="flex items-start">
+<i class="fas fa-users text-blue-400 mt-1 mr-2"></i>
+<p class="text-gray-200">플레이테스트로 파라미터 튜닝</p>
+</div>
+</div>
+</div>
+</div>
+<!-- 인사이트 박스 -->
+<div class="mt-8 bg-blue-900 bg-opacity-20 p-4 rounded-md border-l-4 border-blue-500">
+<div class="flex">
+<i class="fas fa-lightbulb text-yellow-400 mt-1 mr-3"></i>
+<p class="text-gray-300">타격감은 단일 요소가 아닌 여러 신호의 조화입니다. 숫자 조정보다 플레이어 감정에 집중하세요.</p>
+</div>
+</div>
+<!-- 코드 시각 효과 -->
+<div class="absolute bottom-3 right-3 text-xs text-gray-600 font-mono">
+<p>ImpactFeedback::Apply();</p>
+</div>
+</div>
+</div>
+</body>
+</html>
