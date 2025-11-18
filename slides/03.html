@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>목차</title>
+<title>강연자 소개</title>
 <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
 <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
@@ -21,72 +21,141 @@
 <!-- 제목 영역 -->
 <div class="absolute top-0 left-0 w-full h-1 bg-blue-500"></div>
 <h1 class="text-4xl font-bold mb-6 text-white">
-<p>목차</p>
+<p>강연자 소개</p>
 </h1>
 <div class="flex items-center mb-10">
 <div class="w-20 h-1 bg-blue-400"></div>
 </div>
-<!-- 아이콘 -->
-<div class="mt-4 flex justify-center w-full">
-<div class="w-24 h-24 rounded-full bg-blue-500 bg-opacity-20 flex items-center justify-center">
-<i class="fas fa-list-ol text-5xl text-blue-400"></i>
+<!-- 프로필 정보 -->
+<div class="bg-gray-700 bg-opacity-50 p-6 rounded-lg w-full">
+<div class="flex items-center mb-6">
+<div class="w-16 h-16 rounded-full bg-blue-500 flex items-center justify-center">
+<i class="fas fa-user text-3xl"></i>
+</div>
+<div class="ml-4">
+<p class="text-2xl font-bold">허창무</p>
+<p class="text-blue-400">Engine Programmer</p>
+</div>
+</div>
+<div class="space-y-2">
+<p class="text-sm text-gray-300">
+<i class="far fa-envelope mr-2 text-blue-400"></i> 연락처: huhcm4796@gmail.com
+                </p>
+<!-- LinkedIn QR 코드 영역 -->
+<div class="mt-4 pt-4 border-t border-gray-600 flex justify-center items-center gap-3">
+<i class="fab fa-linkedin text-7xl" style="color: #0077B5;"></i>
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://www.linkedin.com/in/%EC%B0%BD%EB%AC%B4-%ED%97%88-99b38216a/"
+     alt="LinkedIn QR Code"
+     class="w-24 h-24 rounded bg-white p-1">
+</div>
 </div>
 </div>
 </div>
 </div>
 <!-- 오른쪽 메인 콘텐츠 영역 -->
-<div class="z-10 w-2/3 flex flex-col px-16 py-12">
-<div class="flex items-center justify-center h-full">
-<div class="w-full max-w-lg">
-<!-- 목차 항목 -->
-<div class="space-y-8">
-<!-- 항목 1 -->
-<div class="flex items-center">
-<div class="w-12 h-12 rounded-full bg-blue-500 flex items-center justify-center mr-6">
-<p class="text-2xl font-bold">1</p>
+<div class="z-10 w-2/3 flex flex-col px-12 py-10">
+<!-- 현재 프로젝트 -->
+<div class="mb-8">
+<div class="flex items-center mb-3">
+<i class="fas fa-briefcase text-xl text-blue-400 mr-3"></i>
+<h2 class="text-2xl font-bold text-white">
+<p>현재 프로젝트</p>
+</h2>
 </div>
-<div>
-<p class="text-2xl font-semibold">강연자 소개</p>
-<p class="text-gray-400 mt-1">허창무 - Engine Programmer</p>
+<div class="pl-9 flex gap-4 items-center">
+<div class="flex-shrink-0">
+<img src="https://wstatic-prod-boc.krafton.com/palm_official-77f4/20251112/9RvLb1zw.png"
+     alt="Palworld Mobile"
+     class="w-64 h-auto rounded-lg shadow-lg">
 </div>
-</div>
-<!-- 항목 2 -->
-<div class="flex items-center">
-<div class="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center mr-6">
-<p class="text-2xl font-bold">2</p>
-</div>
-<div>
-<p class="text-2xl font-semibold">발표</p>
-<p class="text-gray-400 mt-1"><i class="fas fa-quote-left text-xs text-blue-400 mr-1"></i>지금의 내가, 과거의 너에게<i class="fas fa-quote-right text-xs text-blue-400 ml-1"></i></p>
-</div>
-</div>
-<!-- 항목 3 -->
-<div class="flex items-center">
-<div class="w-12 h-12 rounded-full bg-blue-700 flex items-center justify-center mr-6">
-<p class="text-2xl font-bold">3</p>
-</div>
-<div>
-<p class="text-2xl font-semibold">Q&amp;A</p>
-<p class="text-gray-400 mt-1">직무/현업 · 기술/엔진 · 취업/준비</p>
-</div>
-</div>
-<!-- 항목 4 -->
-<div class="flex items-center">
-<div class="w-12 h-12 rounded-full bg-blue-800 flex items-center justify-center mr-6">
-<p class="text-2xl font-bold">4</p>
-</div>
-<div>
-<p class="text-2xl font-semibold">마무리</p>
-<p class="text-gray-400 mt-1">요약 및 실시간 질문</p>
+<div class="flex-1">
+<div class="bg-gray-800 bg-opacity-50 p-5 rounded-lg">
+<p class="text-xl font-bold text-gray-100 mb-1">Krafton · PUBG Studio</p>
+<p class="text-lg font-semibold text-blue-400 mb-2">Palworld Mobile</p>
+<p class="text-base text-gray-400 mb-1">2024.10 - 현재 <span class="text-gray-500">(1년 2개월)</span></p>
+<p class="text-base text-gray-300">CoreTech 파트원 · Engine Programmer</p>
 </div>
 </div>
 </div>
 </div>
+<!-- 이전 프로젝트 -->
+<div class="mb-2">
+<div class="flex items-center mb-3">
+<i class="fas fa-history text-xl text-blue-400 mr-3"></i>
+<h2 class="text-2xl font-bold text-white">
+<p>이전 프로젝트</p>
+</h2>
+</div>
+<div class="pl-9 flex gap-6">
+<!-- 타임라인 (왼쪽) -->
+<div class="flex flex-col relative" style="width: 80px;">
+<!-- 세로 라인 -->
+<div class="absolute w-0.5 bg-blue-400" style="right: 5.5px; height: 450px; top: 12px;"></div>
+<!-- 년도 포인트들 -->
+<div class="flex flex-col">
+<!-- 2024 (강조) -->
+<div class="relative z-10 flex items-start justify-end pt-3" style="height: 75px;">
+<p class="text-sm font-bold text-blue-400 mr-2.5">2024</p>
+<div class="w-3 h-3 rounded-full bg-blue-400" style="margin-right: 1px;"></div>
+</div>
+<!-- 2023 (톤 다운) -->
+<div class="relative z-10 flex items-start justify-end pt-3" style="height: 75px;">
+<p class="text-sm font-bold text-gray-500 mr-3">2023</p>
+<div class="w-2 h-2 rounded-full bg-gray-500" style="margin-top: 2px; margin-right: 2px;"></div>
+</div>
+<!-- 2022 (강조) -->
+<div class="relative z-10 flex items-start justify-end pt-3" style="height: 75px;">
+<p class="text-sm font-bold text-blue-400 mr-2.5">2022</p>
+<div class="w-3 h-3 rounded-full bg-blue-400" style="margin-right: 1px;"></div>
+</div>
+<!-- 2021 (톤 다운) -->
+<div class="relative z-10 flex items-start justify-end pt-3" style="height: 75px;">
+<p class="text-sm font-bold text-gray-500 mr-3">2021</p>
+<div class="w-2 h-2 rounded-full bg-gray-500" style="margin-top: 2px; margin-right: 2px;"></div>
+</div>
+<!-- 2020 (톤 다운) -->
+<div class="relative z-10 flex items-start justify-end pt-3" style="height: 75px;">
+<p class="text-sm font-bold text-gray-500 mr-3">2020</p>
+<div class="w-2 h-2 rounded-full bg-gray-500" style="margin-top: 2px; margin-right: 2px;"></div>
+</div>
+<!-- 2019 (강조) -->
+<div class="relative z-10 flex items-start justify-end pt-3" style="height: 75px;">
+<p class="text-sm font-bold text-blue-400 mr-2.5">2019</p>
+<div class="w-3 h-3 rounded-full bg-blue-400" style="margin-right: 1px;"></div>
+</div>
+<!-- 2018 (강조) -->
+<div class="relative z-10 flex items-start justify-end pt-3" style="height: 75px;">
+<p class="text-sm font-bold text-blue-400 mr-2.5">2018</p>
+<div class="w-3 h-3 rounded-full bg-blue-400" style="margin-right: 1px;"></div>
 </div>
 </div>
-<!-- 코드 시각 효과 -->
-<div class="absolute bottom-3 right-3 text-xs text-gray-600 font-mono">
-<p>gameDevLecture.getContents();</p>
+</div>
+<!-- 프로젝트 정보 (오른쪽) -->
+<div class="flex-1 space-y-6">
+<!-- 프로젝트 1 -->
+<div class="bg-gray-800 bg-opacity-50 p-4 rounded-lg">
+<p class="text-lg font-bold text-gray-100 mb-1">Krafton · OVERDARE</p>
+<p class="text-base font-semibold text-blue-400 mb-2">OVERDARE</p>
+<p class="text-sm text-gray-400 mb-1">2022.03 - 2024.10 <span class="text-gray-500">(2년 8개월)</span></p>
+<p class="text-sm text-gray-300">Unreal Engineering Dept. Engine 팀원 · Engine Programmer</p>
+</div>
+<!-- 프로젝트 2 -->
+<div class="bg-gray-800 bg-opacity-50 p-4 rounded-lg">
+<p class="text-lg font-bold text-gray-100 mb-1">Krafton · PUBG Studio</p>
+<p class="text-base font-semibold text-blue-400 mb-2">PUBG NewState</p>
+<p class="text-sm text-gray-400 mb-1">2019.02 - 2022.03 <span class="text-gray-500">(3년 2개월)</span></p>
+<p class="text-sm text-gray-300">Graphics Eng 팀원 · Engine Programmer</p>
+</div>
+<!-- 프로젝트 3 -->
+<div class="bg-gray-800 bg-opacity-50 p-4 rounded-lg">
+<p class="text-lg font-bold text-gray-100 mb-1">Bluehole · PUBG Studio</p>
+<p class="text-base font-semibold text-blue-400 mb-2">PUBG Lite</p>
+<p class="text-sm text-gray-400 mb-1">2018.11 - 2019.10 <span class="text-gray-500">(1년)</span></p>
+<p class="text-sm text-gray-300">System Program 팀원 · Engine Programmer</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </body>
